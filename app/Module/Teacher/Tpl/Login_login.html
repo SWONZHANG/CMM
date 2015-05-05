@@ -1,0 +1,127 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html,charset=utf-8">
+	<title></title>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+	<script type="text/javascript">
+	var verifyURL='{:U("Index/Login/verify",'','')}';
+	</script>
+	<script type="text/javascript" src="__PUBLIC__/js/login.js"></script>
+<style type="text/css">
+	body{
+
+		text-align: center;
+		background: url("__PUBLIC__/images/vv.jpg") no-repeat;
+		background-size: cover;
+	}
+	#box{
+		width:450px;
+		height:550px;
+		background-color: #ffffff;
+		margin: 0 auto;
+		margin-top: 50px;
+		border:1.5px solid #999999;
+		border-radius: 50px;
+	}
+	#top{
+		margin-top:40px;
+	}
+	#top span h1{
+		box-shadow: 2px 2px 2px 2px black;
+		display: inline;
+	}
+	#top1{
+		margin: 0 auto;
+		position: relative;
+		top:30px;
+	}
+	#top1 ul{
+		list-style: none;
+	}
+	#top1 form input{
+		width:180px;
+		height:30px;
+		border: 2px solid #999999;
+		border-radius: 5px;
+		margin-left: -40px;
+	}
+	#top1 form textarea{
+		margin-left: -40px;
+		border: 2px solid #999999;
+		border-radius: 5px;
+	}
+	#top1 ul li{
+		margin-top: 30px;
+	}
+	#top1 ul .top11{
+		position: absolute;
+		top:-25px;
+		left:185px;
+	}
+	#top1 ul .top12{
+		position: absolute;
+		top:36px;
+		left:158px;
+	}
+	#top1 ul .top13{
+		position: absolute;
+		top:95px;
+		left:182px;
+	}
+	#top1 ul .top14{
+		position: absolute;
+		top:158px;
+		left:170px;
+	}
+	#top1 ul span{
+		color:#999999;
+		font-weight: bold;
+		font-size: 17px;
+	}
+	#top1 ul .submit{
+		position: absolute;
+		top:353px;
+		left:173px;
+		box-shadow: 1px 1px 2px 1px black rgba(244 244 244 0.5);
+	}
+</style>
+</head>
+<body>
+</div>
+<!--[if !IE]> <h1>除IE外都可识别 </h1><!--<![endif]-->
+<div id="box">
+	<foreach name="ss" item="elec">
+	<div><td>
+		<th>{$elec.e_id}</th>
+		<th>{$elec.e_dor}</th>
+		<th>{$elec.e_remain}</th>
+	</td></div>
+	</foreach>
+	<th><td>{$page}</td></th>
+	<div id="top">
+		<span><h1>GET IN TOUCH WITH US!</h1></span>
+	</div>
+	<div id="top1">
+		<form method="post" action="{:U(GROUP_NAME.'/Login/login','' ,'')}">
+		<ul>
+		<li>
+		<span class="top11">Your Name</span>
+		<input type="text" name="num" id="username" placehold="fff" >
+		</li><li>
+		<span class="top12">Your Password</span>
+		<input type="password" id="password" name="pwd"/>
+		</li><li>
+		<span class="top13">Your Phone</span>
+		<input type="text" id="pnum" name="pnum"/>
+		</li><li>
+		<span class="top14">Your Message</span>
+		<input type="text" name="verify" /><img onClick="xx()" id="code" src="{:U('Index/Login/verify','','')}" /><a  href="javascript: change_code(this);">看不清楚</a>
+		<textarea rows="5px" id="pnum" name="content" cols="25px" placeholder="有啥事要跟俺们说的呀？" ></textarea>
+		</li>
+		<li><input class="submit"type="submit" name="submit" value="提交"></li>
+		</ul>
+		</form>
+	</div>
+</div>
+</body>
+</html>

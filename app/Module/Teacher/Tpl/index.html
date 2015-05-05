@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>背景图片自适应</title>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+    
+	var bgImg = {
+	    src:"bgimg.jpg",
+		height:1080,
+		width:1920
+	};
+   
+	$(document).ready(function() {
+		  reLayout();
+		  
+		  $(".moveTest").animate({
+		      width:"50px",
+			  height:"50px",
+		      x:50,
+			  y:50
+		  },1000);
+		  
+	});
+	
+	function reLayout()
+	{
+	    var height = $(window).height();
+		var width = $(window).width();
+
+		$('#lay_bg').css({height:height,width:width});
+		
+		var ImgHeight = height;
+		var ImgWidth = ImgHeight*(bgImg.width/bgImg.height);
+		
+		if(ImgWidth<width)
+		{
+		    ImgWidth = width;
+		    ImgHeight = ImgWidth*(bgImg.height/bgImg.width);
+		}
+		
+		var top = 0,left = 0;
+		if(ImgHeight>height)
+		    top = (ImgHeight-height)/2*-1;
+		if(ImgWidth>width)
+		    width = (ImgWidth-width)/2*-1;
+		$('#lay_bg_img').css({height:ImgHeight,width:ImgWidth,top:top,left:left});
+		$('#lay_bg_img').attr('src',bgImg.src);
+		
+		
+		
+	}
+</script>
+</head>
+<body onResize='reLayout()'>
+<div id="lay_bg" style="position:absolute;left:0;top:0;z-index:-1;overflow:hidden;">
+<img id="lay_bg_img" style="position:absolute;z-index:-1;"></img>
+</div>
+</body>
+</html>
+
+
+

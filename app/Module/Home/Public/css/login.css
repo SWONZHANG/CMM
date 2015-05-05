@@ -1,0 +1,81 @@
+	body{
+
+		text-align: center;
+		background: url("../images/vv.jpg") no-repeat;
+		background-size: cover;
+	}
+	#box{
+		width:450px;
+		height:450px;
+		background-color: #ffffff;
+		margin: 0 auto;
+		margin-top: 80px;
+		border:1.5px solid #999999;
+		border-radius: 50px;
+	}
+	#top{
+		margin-top:40px;
+	}
+	#top span h1{
+		box-shadow: 2px 2px 2px 2px black;
+		display: inline;
+	}
+	#top1{
+		margin: 0 auto;
+		position: relative;
+		top:30px;
+	}
+	#top1 ul{
+		list-style: none;
+	}
+	#top1 form input{
+		width:180px;
+		height:30px;
+		border: 2px solid #999999;
+		border-radius: 5px;
+		margin-left: -40px;
+	}
+	#top1 ul li{
+		margin-top: 30px;
+	}
+	#top1 ul .top11{
+		position: relative;
+		top:-40px;
+		left:45px;
+	}
+	#top1 ul .top12{
+		position: relative;
+		top:-36px;
+		left:45px;
+	}
+	#top1 ul .top14{
+		position: relative;
+		top:-35px;
+		left:90px;
+	}
+	#top1 ul span{
+		color:#999999;
+		font-weight: bold;
+		font-size: 17px;
+	}
+	#top1 ul .submit{
+		position: relative;
+		top:20px;
+		
+		box-shadow: 1px 1px 2px 1px black rgba(244 244 244 0.5);
+	}
+	#password{
+		position: relative;
+		left: -36px;
+	}
+	#username{
+		position: relative;
+		left: -36px;
+	}
+	.select{
+		position: relative;
+		left:-40px;
+	}
+	a{
+		text-decoration: none;
+	}

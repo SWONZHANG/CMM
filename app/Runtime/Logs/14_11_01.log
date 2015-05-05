@@ -1,0 +1,28 @@
+[ 2014-11-01T09:25:05+08:00 ] 127.0.0.1 /item/home/Login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002673s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002911s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002402s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.050486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050645s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001449s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001413s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001202s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005936s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001960s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002170s ]
+
+[ 2014-11-01T09:25:05+08:00 ] 127.0.0.1 /Item/home/Login/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002706s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002999s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002360s ]
+

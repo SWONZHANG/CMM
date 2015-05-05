@@ -1,0 +1,146 @@
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background: url("../images/leftbg.png") no-repeat;
+		min-width: 255px;
+		max-height: 1213px;
+	}
+	#leftbox{
+		min-width: 255px;
+		max-height: 1213px;
+	}
+	#leftbox #box1{
+		width: 263px;
+		height: 101px;
+	} 
+	#leftbox #box2{
+		width:263px;
+		height: 157px;
+	}
+	#leftbox #box2 img{
+		height: 75px;
+		width: 75px;
+		border-radius: 50px;
+		margin-top: 40px;
+		margin-left: 30px;
+	}
+	#leftbox #box2 span{
+		position: relative;
+		bottom: 66px;
+		left:120px;
+		color:white;
+		font-weight: bold;
+	}
+	#leftbox #nav{
+		width: 263px;
+		font-weight: bold;
+		font-size: 18px;
+	}
+	#leftbox #nav li{
+		color:#ffffff;
+		text-decoration: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 90px;
+		transition:width 2s;
+		-moz-transition:width 2s; /* Firefox 4 */
+		-webkit-transition:width 2s; /* Safari and Chrome */
+		-o-transition:width 2s; /* Opera */
+	}
+	#leftbox #nav .selected{
+		background-color: #0d0015;
+		color:#009966;
+	}
+	#leftbox #nav li{
+		color: #999999;
+		
+	}
+	#leftbox #nav li:hover{
+		background-color: #0d0015;color:#009966;
+	}
+	a{
+		text-decoration: none;
+	}
+	#leftbox #nav .selected::after{
+		content:'';
+		width:10px;
+		height: 42px;
+		background-color:#009966;
+		position: absolute;
+		left:252.5px;
+		margin-top: -11px;
+	}
+	#leftbox #nav .nav7::before{
+		content:'';
+		width:23px;
+		height:23px;
+		position: absolute;
+		background: url("../images/leftbox2.png");
+		left:48px;
+		margin-top: 7px;
+	}
+	#leftbox #nav .nav6::before{
+		content:'';
+		width:23px;
+		height:23px;
+		position: absolute;
+		background: url("../images/leftbox5.png");
+		left:50px;
+		margin-top: 7px;
+
+	}
+	#leftbox #nav .nav5::before{
+		content:'';
+		width:23px;
+		height:23px;
+		position: absolute;
+		background: url("../images/leftbox6.png");
+		left:50px;
+		margin-top: 7px;
+
+	}
+	#leftbox #nav .nav4::before{
+		content:'';
+		width:23px;
+		height:23px;
+		position: absolute;
+		background: url("../images/leftbox7.png");
+		left:50px;
+		margin-top: 7px;
+
+	}
+	#leftbox #nav .nav3::before{
+		content:'';
+		width:23px;
+		height:23px;
+		position: absolute;
+		background: url("../images/leftbox3.png");
+		left:50px;
+		margin-top: 7px;
+
+	}
+	#leftbox #nav .nav2::before{
+		content:'';
+		width:23px;
+		height:23px;
+		position: absolute;
+		background: url("../images/leftbox1.png");
+		left:52px;
+		margin-top: 7px;
+
+	}
+	#leftbox #nav .nav1::before{
+		content:'';
+		width:23px;
+		height:23px;
+		position: absolute;
+		background: url("../images/leftbox4.png");
+		left:52px;
+		margin-top: 7px;
+
+	}
+	#leftbox #box2 .box21{
+		color:#009966;
+	}
